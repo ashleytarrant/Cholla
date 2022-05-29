@@ -1,0 +1,51 @@
+#
+# Parameter File for 3D box filled with gas 
+#
+
+################################################
+# number of grid cells in the x dimension
+nx=256
+# number of grid cells in the y dimension
+ny=128
+# number of grid cells in the z dimension
+nz=128
+# final output time
+tout=1000.0
+# time interval for output
+outstep=1000.0
+# name of initial conditions
+init=Wind
+# domain properties
+xmin=0.0
+ymin=0.0
+zmin=0.0
+xlen=2.0
+ylen=1.0
+zlen=1.0
+# type of boundary conditions
+xl_bcnd=4
+xu_bcnd=3
+yl_bcnd=3
+yu_bcnd=3
+zl_bcnd=3
+zu_bcnd=3
+custom_bcnd=wind
+# path to output directory
+outdir=./
+
+#################################################
+# I hard-coded these as number density in particles/cm^3
+# velocity in km/s
+# and pressure in P/K_B, but you can change this in the
+# initial conditions function and wind boundary function if you want
+# density
+n=0.005
+# velocity
+vx=1000
+vy=0
+vz=0
+# pressure
+P=3.15e4
+# value of gamma
+gamma=1.666666667
+
